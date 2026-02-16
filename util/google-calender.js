@@ -1,6 +1,5 @@
-const CLIENT_ID =
-        "25137374378-jouejoocf8tltniog7kvvm4ng1iqdgqg.apps.googleusercontent.com";
-      const API_KEY = "AIzaSyAmKihTtg6OXtpqUevFgF_J2oFHny4syBQ";
+const CLIENT_ID = process.env.CLIENT_ID;
+      const API_KEY = process.env.API_KEY
 
       // Discovery doc URL for APIs used by the quickstart
       const DISCOVERY_DOC =
@@ -175,3 +174,4 @@ const CLIENT_ID =
           appendPre("Event created: " + event.htmlLink);
         });
       }
+
